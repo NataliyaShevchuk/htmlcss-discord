@@ -3,7 +3,7 @@
     --color-grey: #23272A;
     --color-lilla: #8EA1E1;
     --color-bisc: #F6F6F6;
-
+    --tab-icon: "img/favicon.ico";
 }
 
 
@@ -11,6 +11,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .contenitore{
@@ -56,8 +61,7 @@
 }
 .contenitore-del-titolo{
     background-color: transparent;
-    width: 720px;
-    height: 520px;
+    width: 50%;
     margin: auto;
     padding: 120px 40px;
     vertical-align: baseline;
@@ -76,124 +80,179 @@
     padding-bottom: 40px;
     line-height: 2rem;
 }
-.box{
-    width: 920px;
+/* .box{
+    width: 100%;
     margin: auto;
-}
+} */
 
 
 
 
-.row-sezione{
-    display: flex;
-    justify-items: flex-start;
+
+.container{
+    /* display: flex;
+    justify-content: flex-start; */
+    max-width: 920px;
+    width: 100%;
+    margin: 0 auto;
     
 }
-.sezione-one{
-    /* display: flex;
+.row{
+    display: flex;
     justify-content: center;
-    align-items: center; */
-    padding: 120px 40px;
+    padding: 120px 0;
+    background-color: transparent;
+}
+.row-grey{
+    background-color: var(--color-bisc);
+}
+.row-white{
     background-color: white;
+}
+.immagine-fianco-sx{
+    padding-right: 50px;
+}
+.immagine-fianco-dx{
+    padding-left: 50px;
+}
+.W-70{
+    width: 70%;
+}
+.W-30{
+    width: 30%;
 }
 .parte-testo{
     font-family: var(--font);
     color: var(--color-grey);
 }
 .subtitolo{
-    width: 380px;
-    height: 228px;
-    font-size: 40px;
+    font-size: 35px;
+    padding-bottom: 30px;
 }
 
 .sottoparagrafo{
-    width: 380px;
-    height: 128px;
-    font-size: 17px;
-    line-height: 30px;
+    font-size: 1rem;
+    line-height: 27px;
 }
 
-.subtitolo-2{
-    width: 380px;
-    height: 130px;
-    font-size: 40px;
-}
-
-.sottoparagrafo-2{
-    width: 380px;
-    height: 128px;
-    font-size: 17px;
-    line-height: 30px;
-}
-.sezione-two{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    padding: 120px 40px;
-    background-color: var(--color-bisc);
-}
-
-
-.row-sezione4{
-    vertical-align: middle;
-    
+.contenitore-row{
+    padding: 50px;
 }
 
 .parte-testo.row-4{
 text-align: center;
 }
 
-.subtitolo.nuovo{
-    width: auto;
-    height: auto;
-    padding-bottom: 40px;
-
-}
-.sottoparagrafo.nuovo{
-    width: auto;
-    height: auto;
-}
-
-.subtitolo.ultimo{
-    width: auto;
-    height: auto;
-    font-size: 20px;
+.subtitolo.conclusione{
+    font-size: 27px;
     text-align: center;
-    padding: 40px;
+    padding: 30px;
 }
 
-.last-one{
+.conclusione{
     background-image: url(img/stars.svg);
     background-size: contain;
     background-repeat: none;
     padding-bottom: 20px;
 }
 
-.bottone{
+.CTA-finale{
     display: flex;
     justify-content: center;
-    padding-bottom: 200px;
+    padding-bottom: 10%;
 }
 
 
-.footer{
+footer{
     background-color: var(--color-grey);
-    width: 1440px;
-    height: 520px;
-    padding: 80px auto;
+    width: 100%;
+    color: white;
 }
+.footer{
+ padding: 5% 0;
+}
+.slot{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    border: 1px solid yellow;
+    
+}
+
 .slogan-finale{
     color: var(--color-lilla);
     font-family: var(--font);
+    font-size: 27px;
+    flex: 70px;
+}
 
+.testo-icona{
+    font-family: var(--font);
+    color: white;
+    font-size: 100%;
+    display: inline;
+
+}
+.freccia{
+    color: white;
+    text-align: center;
+}
+.icona-img{
+    width: 15%;
+    display: inline;
+}
+.social-bar{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding-top: 20px;
+}
+.icone-social{
+    padding-left: 50%;
+}
+.fa-brands{
+    font-size: 20px;
 }
 
 
+.columns {
+    /* display: flex;
+    flex-flow: row wrap;
+    align-items: center; */
+    width: 100%;
+    border: 1px solid red;
+    font-family: var(--font);
+  }
+  
+  .column {
+    flex: 25%;
+    border: 1px solid pink;
+  }
+  .ul-style-none{
+    list-style: none;
+    font-size: .5rem;
+  }
+
+  .h5-minititolo{
+    color: var(--color-lilla);
+    font-size: 16px;
+  }
+
+  .contenitore-footer{
+    display: flex;
+  }
+ 
 
 
 
 
+.hr{
+    background-color: var(--color-lilla);
+    min-width: 920px;
+    min-height: 1px;
+    margin: 4% 0;
 
+}
 
 .btn{
     border-radius: 28px;
